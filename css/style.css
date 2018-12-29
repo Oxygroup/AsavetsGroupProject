@@ -57,6 +57,10 @@ header .basket {
     line-height: 22px;
     color: #333333;
     text-decoration: none;
+    display: inline-block;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 header .basket span {
     color: #1a9547;
@@ -68,7 +72,21 @@ header .login [class*="icon"] {
     font-size: 18px;
 }
 header .phone [class*="icon"] {
-    font-size: 2px;
+    font-size: 20px;
+}
+.banner .sale {
+    width: 305px;
+    height: 360px;
+}
+.banner .slider {
+    width: 640px;
+    height: 360px;
+}
+.banner>div {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .advanteges .item span {
     font-size: 14px;
@@ -104,6 +122,13 @@ header .phone [class*="icon"] {
     text-decoration: none;
     color: #666666;
 }
+.card .img {
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .card .name {
     font-size: 15px;
     line-height: 22px;
@@ -133,12 +158,26 @@ header .phone [class*="icon"] {
     text-align: center;
     color: #ffffff;
 }
-.socials h2 {
-    font-size: 14px;
+.widjets h1 {
+    font-size: 18px;
     font-weight: 600;
     line-height: 22px;
     text-align: center;
-    color: #666666;
+    color: #ffffff;
+}
+.widjets .item:nth-child(1),
+.widjets .item:last-child {
+    width: 290px;
+    height: 400px;
+}
+.widjets .item:nth-child(2) {
+    width: 350px;
+    height: 400px;
+}
+.widjets .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .tabs li a {
     font-size: 14px;
@@ -165,4 +204,38 @@ footer a {
 }
 footer a.soc {
     font-size: 21px;
+}
+/*новости подробно*/
+.breadCrumbs li a, .breadCrumbs li {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
+}
+.firstCap {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+.secCap {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+.newsDate {
+    font-size: 12px;
+    line-height: 22px;
+    color: #aaaaaa;
+}
+.newTxt {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+.moreNews {
+    font-size: 13px;
+    line-height: 22px;
+    color: #0069b4;
 }
