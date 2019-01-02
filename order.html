@@ -41,38 +41,40 @@
         </ul>
         <h1>Оформление заказа</h1>
         <form action="">
-            <div>
+            <div class="form-order">
                 <label for="">Выбор города</label>
                 <select name="" id="">
                     <option value="">Москва, Московская обл., Россия</option>
                 </select>
             </div>
-            <fieldset>
+            <fieldset class="order-way" >
                 <h2>Способ доставки</h2>
                 <ul>
                     <li>
-                        <input type="radio">
+                        <input type="radio" name="way">
                         <label for="">Доставка курьерской службой по Москве и МО (IM Logistics)   0 р.</label>
                         <p>Заказ оформленный: - до 16:00 будет доставлен на следующий рабочий день; - после 16:00 будет доставлен через один рабочий день;</p>
                     </li>
                     <li>
-                        <input type="radio">
+                        <input type="radio" name="way">
                         <label for="">Экспресс-доставка   450 р.</label>
                         <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки недоступна.</p>
                     </li>
                     <li>
-                        <input type="radio">
+                        <input type="radio" name="way">
                         <label for="">Доставить в подарок   450 р.</label>
-                        <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. <span>Дополнительная услуга — подарочная упаковка</span></p>
+                        <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется только по предоплате.
+                            <span>Дополнительная услуга — подарочная упаковка</span>
+                        </p>
                     </li>
                     <li>
-                        <input type="radio">
+                        <input type="radio" name="way">
                         <label for="">Самовывоз из пункта выдачи заказов   0 р.</label>
                         <p>1-2 рабочих дня.</p>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="order-address">
                 <h2>Адрес доставки</h2>
                 <div>
                     <label for=""></label>
@@ -84,42 +86,42 @@
                 </div>
                 <div>
                     <div>
-                        <label for="">Район<span>*</span</label>
+                        <label for="">Район<span>*</span></label>
                         <input type="text">
                     </div>
                     <div>
-                        <label for="">Дом<span>*</span</label>
+                        <label for="">Дом<span>*</span></label>
                         <input type="text">
                     </div>
                     <div>
-                        <label for="">Корпус<span>*</span</label>
+                        <label for="">Корпус<span>*</span></label>
                         <input type="text">
                     </div>
                 </div>
                 <div>
-                    <label for="">Квартира/Офис<span>*</span</label>
+                    <label for="">Квартира/Офис<span>*</span></label>
                     <textarea name="" id=""></textarea>
                 </div>
                 <div>
                     <label for="">Дополнительно (номер домофона, номер офиса и тд.)</label>
                     <textarea name="" id=""></textarea></div>
             </fieldset>
-            <fieldset>
+            <fieldset class="order-way">
                 <h2>Способ оплаты</h2>
                 <ul>
                     <li>
-                        <input type="radio">
+                        <input type="radio" name="ways">
                         <label for="">Оплата при получении</label>
                         <p>Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</p>
                     </li>
                     <li>
-                        <input type="radio">
+                        <input type="radio" name="ways">
                         <label for="">Оплата электронным способом (Робокасса)</label>
                         <p>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</p>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="order-address">
                 <h2>Ваши данные</h2>
                 <div>
                     <label for="">Имя<span>*</span></label>

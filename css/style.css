@@ -3,7 +3,7 @@
 }
 body {
     margin: 0 auto;
-    font-family: "Open Sans"
+    font-family: 'Open Sans', serif;
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -238,4 +238,124 @@ footer a.soc {
     font-size: 13px;
     line-height: 22px;
     color: #0069b4;
+}
+/*корпоративным клиентам*/
+.breadcrumbs li {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: #999999;
+}
+.wrapper .left p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+.wrapper form label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: italic;
+}
+.formLog span:nth-child(1) {
+    font-size: 13px;
+    line-height: normal;
+    color: #333333;
+}
+.formLog span:nth-child(2) {
+    font-size: 11px;
+    line-height: normal;
+    color: #999999;
+}
+.radio-wrapper ul label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: normal;
+}
+.wrapper .formFile label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #229647;
+    font-style: normal;
+    text-decoration: underline;
+}
+.formFile span {
+    font-size: 11px;
+    line-height: normal;
+    color: #999999;
+}
+.formQua option {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+form button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.right span {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+}
+.right p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+.right button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+/*оформление заказа*/
+h1 {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+}
+.form-order label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: italic;
+}
+.form-order option {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+h2 {
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+}
+.order-way label {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+.order-way p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+.order-way span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #f26522;
+}
+.order-address label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: italic;
+}
+.order-address label span {
+    color: #ed1c24;
 }
