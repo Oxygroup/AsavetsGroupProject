@@ -151,7 +151,8 @@ header .phone [class*="icon"] {
     padding: 20px;
 }
 .subscribe .wrapper {
-    display: table;width: 100%;
+    display: table;
+    width: 100%;
     margin-top: 10px;
 }
 .subscribe label {
