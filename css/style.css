@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 body {
@@ -39,6 +39,13 @@ ul {
     text-indent: 200%;
     white-space: nowrap;
 }
+a, button {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
 .table {
     display: table;
     width: 100%;
@@ -67,6 +74,9 @@ header .login {
     line-height: 18px;
     color: #0069b4;
 }
+header .login:hover {
+    text-decoration-color: transparent;
+}
 header .menu {
 }
 header .menu li {
@@ -78,6 +88,9 @@ header .menu li a {
     line-height: 28px;
     color: #333333;
 }
+.menu li a:hover {
+    text-decoration-color: transparent;
+}
 .logo {
 }
 header .phone {
@@ -85,6 +98,9 @@ header .phone {
     line-height: 20px;
     color: #333333;
     text-decoration: none;
+}
+header .phone:hover {
+    opacity: 0.7;
 }
 header .callback {
     font-size: 12px;
@@ -336,6 +352,25 @@ header .phone [class*="icon"] {
 }
 .info .title {
     text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+
+}
+.info .title::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid #333333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.info .title.active::before {
+    transform: rotate(180deg);
 }
 footer {
     font-size: 13px;
@@ -496,6 +531,8 @@ h2 {
     line-height: 22px;
     color: #333333;
 }
+
+
 .order-way label {
     font-size: 13px;
     line-height: 19px;
@@ -519,4 +556,53 @@ h2 {
 }
 .order-address label span {
     color: #ed1c24;
+}
+.order-list li {
+    padding-left: 40px;
+}
+.order-list label {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+.radio-btn {
+    display: none;
+}
+.radio-btn:not(checked) + label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radio-btn:not(checked) + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.radio-btn:checked + label::before {
+    border-color: #51bf87;
+}
+.radio-btn:checked + label::after {
+    opacity: 1;
+}
+.radio-btn + label {
+    cursor: pointer;
 }
