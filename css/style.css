@@ -606,3 +606,42 @@ h2 {
 .radio-btn + label {
     cursor: pointer;
 }
+@media (max-width: 1199px) {
+    .container {
+        width: 980px;
+    }
+    .banner .sale {
+        height: 350px;
+        width: 295px;
+    }
+    .banner .slider {
+        height: 350px;
+        width: 620px;
+    }
+    .advanteges {
+        width: calc(100% - 300px);
+    }
+    .subscribe {
+        width: 300px;
+    }
+    .card img {
+        height: 215px;
+    }
+    .widjets {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        width: 780px;
+    }
+    .
+
+}
+@media (max-width: 767px){
+    .container {
+        width: 100%;
+    }
+}
+
+
