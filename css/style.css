@@ -111,7 +111,7 @@ header .callback {
     display: table;
     margin-left: auto;
 }
-header .timing {
+header p.timing {
     font-size: 13px;
     line-height: 19px;
     color: #999999;
@@ -244,7 +244,7 @@ header .phone [class*="icon"] {
     color: rgba(255,255,255,0.5);
     display: table-cell;
     vertical-align: middle;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 .filter li {
     font-size: 13px;
@@ -273,7 +273,7 @@ header .phone [class*="icon"] {
     height: 356px;
     background-color: #fff;
     border: 1px solid #e1e1e1;
-    box-shadow: 0 7px 10px rgba(0,0,0,0,1);
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
     z-index: -1;
 }
 .thumbnail .pic {
@@ -367,6 +367,7 @@ header .phone [class*="icon"] {
     line-height: 32px;
     text-align: center;
     color: #ffffff;
+    background-color: #ff7200;
 }
 .widjets h1 {
     font-size: 18px;
