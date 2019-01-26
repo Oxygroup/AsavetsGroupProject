@@ -49,5 +49,7 @@ $(document).ready(function () {
 
     $("#tabs").tabs();
 
+    $('select').selectric();
+
 })
 

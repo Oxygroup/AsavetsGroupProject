@@ -1,13 +1,15 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Open Sans', serif;
     position: relative;
     margin: 0px;
     padding: 0px;
- }
-body:before{
+}
+
+body:before {
     content: '';
     display: block;
     width: 100%;
@@ -16,28 +18,34 @@ body:before{
     top: 12px;
     left: 0px;
 }
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+
 .clear::after {
     content: "";
     display: block;
     clear: both;
 }
+
 .container {
     width: 1010px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .invisLink {
     position: relative;
     z-index: 1;
 }
+
 .invisLink > a {
     display: block;
     position: absolute;
@@ -50,6 +58,7 @@ ul {
     text-indent: 200%;
     white-space: nowrap;
 }
+
 a, button {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -57,74 +66,92 @@ a, button {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 .table {
     display: table;
     width: 100%;
 }
+
 .tCell {
     display: table-cell;
 }
+
 button {
     border: none;
     cursor: pointer;
 }
+
 header {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 header .left,
 header .logo,
 header .right {
     vertical-align: top;
 }
+
 header .left {
     padding-top: 5px;
     width: 33%;
 }
+
 header .logo {
     width: 33%;
     text-align: center;
 }
+
 header .right {
     width: 34%;
     text-align: right;
     padding-top: 5px;
 }
+
 header .login {
     font-size: 13px;
     line-height: 18px;
     color: #0069b4;
 }
+
 header .login:hover {
     text-decoration-color: transparent;
 }
+
 header .menu {
     margin-top: 35px;
     padding-right: 20px;
 }
+
 header .menu li {
     display: inline-block;
     margin-right: 18px;
 }
+
 header .menu li a {
     font-size: 13px;
     line-height: 28px;
     color: #333333;
 }
+
 .menu li a:hover {
     text-decoration-color: transparent;
 }
+
 .logo {
 }
+
 header .phone {
     font-size: 20px;
     line-height: 20px;
     color: #333333;
     text-decoration: none;
 }
+
 header .phone:hover {
     opacity: 0.7;
 }
+
 header .callback {
     font-size: 12px;
     line-height: 16px;
@@ -135,6 +162,7 @@ header .callback {
     margin-left: auto;
     margin-top: 5px;
 }
+
 header p.timing {
     font-size: 13px;
     line-height: 19px;
@@ -142,13 +170,15 @@ header p.timing {
     color: #999999;
     margin-top: 15px;
 }
-header p.timing span{
+
+header p.timing span {
     display: block;
     font-size: 13px;
     line-height: 19px;
     display: block;
     color: #999999;
 }
+
 header .basket {
     font-size: 13px;
     line-height: 22px;
@@ -160,39 +190,47 @@ header .basket {
     background-position: left center;
     margin-top: 20px;
 }
+
 header .basket span {
     color: #1a9547;
     font-size: 13px;
     line-height: 22px;
 }
-header [class*="icon"]{
+
+header [class*="icon"] {
     color: #caebd4;
 }
+
 header .login [class*="icon"] {
     font-size: 18px;
     display: inline-block;
     vertical-align: bottom;
     margin-right: 8px;
 }
+
 header .phone [class*="icon"] {
     font-size: 20px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
 }
+
 .banner {
     display: flex;
     justify-content: space-between;
 }
+
 .banner .sale {
     width: 305px;
     height: 360px;
 }
+
 .banner .slider {
     width: 640px;
     height: 360px;
     position: relative;
 }
+
 .slides .item {
     height: 360px;
     -webkit-background-size: cover;
@@ -200,12 +238,14 @@ header .phone [class*="icon"] {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .dots {
     position: absolute;
     right: 15px;
     bottom: 10px;
     z-index: 1;
 }
+
 .dots button {
     padding: 0;
     width: 8px;
@@ -214,31 +254,38 @@ header .phone [class*="icon"] {
     opacity: 0.5;
     border-radius: 50%;
 }
+
 .dots button + button {
     margin-left: 12px;
 }
+
 .dots button.active {
     opacity: 1;
 }
+
 .banner {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .advSub {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
 .advanteges {
     width: calc(100% - 320px);
     float: left;
 }
+
 .advanteges .item {
     width: 25%;
     float: left;
     padding-right: 45px;
 }
+
 .advanteges .item span {
     font-size: 14px;
     font-weight: bold;
@@ -248,6 +295,7 @@ header .phone [class*="icon"] {
     width: 100px;
     margin-top: 20px;
 }
+
 .advanteges .item p {
     font-size: 12px;
     line-height: 14px;
@@ -255,21 +303,25 @@ header .phone [class*="icon"] {
     display: block;
     margin-top: 10px;
 }
+
 .subscribe {
     width: 320px;
     float: left;
     background-color: #63b94a;
     padding: 20px;
 }
+
 .subscribe .wrapper {
     display: table;
     width: 100%;
     margin-top: 10px;
 }
+
 .subscribe label {
     font-size: 16px;
     color: #ffffff;
 }
+
 .subscribe input {
     font-size: 13px;
     line-height: 37px;
@@ -279,6 +331,7 @@ header .phone [class*="icon"] {
     padding-left: 12px;
     border: none;
 }
+
 .subscribe button {
     font-size: 13px;
     line-height: 37px;
@@ -290,33 +343,40 @@ header .phone [class*="icon"] {
     width: 188px;
     border: none;
 }
+
 .subscribe .wrapper span {
     font-size: 12px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     display: table-cell;
     vertical-align: middle;
     padding-left: 20px;
 }
+
 .filter {
     padding-bottom: 35px;
 }
+
 .filter li {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
     display: inline-block;
 }
-.filter li+li {
+
+.filter li + li {
     margin-left: 18px;
 }
+
 .filter li a {
     text-decoration: none;
     color: #666666;
 }
+
 .card {
     position: relative;
     z-index: 1;
 }
+
 .thumbnail {
     position: absolute;
     display: none;
@@ -327,9 +387,10 @@ header .phone [class*="icon"] {
     height: 356px;
     background-color: #fff;
     border: 1px solid #e1e1e1;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
     z-index: -1;
 }
+
 .thumbnail .pic {
     margin-bottom: 10px;
     width: 53px;
@@ -338,6 +399,7 @@ header .phone [class*="icon"] {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .thumbnail .pic.active {
     border: 1px solid #259c47;
 }
@@ -352,28 +414,35 @@ header .phone [class*="icon"] {
     line-height: 20px;
     text-align: center;
 }
+
 .status.hit {
     background-color: #6eddcc;
 }
+
 .status.discount {
     background-color: #ffed03;
 }
+
 .status.new {
     background-color: #78ec71;
 }
+
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
+
 .card .content {
     min-height: 110px;
     padding-top: 10px;
 }
+
 .card {
     position: relative;
     border-bottom: 1px solid #e4e4e4;
 }
+
 .card .buy {
     position: absolute;
     width: 100%;
@@ -381,12 +450,14 @@ header .phone [class*="icon"] {
     bottom: 0px;
     padding-bottom: 10px;
 }
+
 .card .title {
     display: block;
     font-size: 15px;
     line-height: 22px;
     color: #333333;
 }
+
 .card .img {
     width: 100%;
     height: 220px;
@@ -394,22 +465,26 @@ header .phone [class*="icon"] {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .card .name {
     font-size: 15px;
     line-height: 22px;
     color: #333333;
 }
+
 .card a {
     font-size: 15px;
     line-height: 22px;
     color: #0069b4;
 }
+
 .card .price {
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
     color: #333333;
 }
+
 .card .price .old {
     font-size: 14px;
     font-weight: normal;
@@ -420,6 +495,7 @@ header .phone [class*="icon"] {
     vertical-align: top;
     margin-right: 5px;
 }
+
 .card button {
     font-size: 14px;
     line-height: 32px;
@@ -429,46 +505,65 @@ header .phone [class*="icon"] {
     float: right;
     width: 100px;
 }
+
 .widjets h1 {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
     text-align: center;
-    color: #ffffff;
+    color: #666666;
+    padding-top: 65px;
+    padding-bottom: 55px;
 }
+
 .widjets .wrap {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
+
 .widjets .item:nth-child(1),
 .widjets .item:last-child {
     width: 290px;
     height: 400px;
 }
+
 .widjets .item:nth-child(2) {
     width: 350px;
     height: 400px;
 }
+
 .widjets .item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .tabs li a {
     font-size: 14px;
     text-decoration: none;
     line-height: 45px;
     color: #999999;
 }
+
 .info .ui-tabs {
     padding: 0;
 }
+
 .info .ui-tabs .ui-tabs-nav {
     padding: 0;
 }
+
+.ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: .2em .2em 0;
+    padding-bottom: 20px;
+}
+
 .info .ui-tabs .ui-tabs-nav li {
     margin: 0;
 }
+
 .info .tabs a {
     display: block;
     font-size: 14px;
@@ -479,16 +574,20 @@ header .phone [class*="icon"] {
     height: 45px;
     line-height: 45px;
 }
+
 .info.ui-tabs .ui-tabs-nav li.ui-tabs-active {
     margin: 0;
     padding: 0;
 }
+
 .info.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     padding: 0 15px;
 }
+
 .info.ui-tabs .ui-tabs-panel {
     padding: 0;
 }
+
 .info .tabs li.ui-tabs-active a,
 .info .tabs li a:hover {
     border: none;
@@ -496,18 +595,22 @@ header .phone [class*="icon"] {
     color: #1c9847;
     cursor: pointer;
 }
+
 .info .content {
     font-size: 12px;
     line-height: 18px;
     color: #333333;
 }
+
 .info .title {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
     padding-left: 25px;
+    padding-bottom: 30px;
 
 }
+
 .info .title::before {
     content: '';
     display: block;
@@ -520,8 +623,17 @@ header .phone [class*="icon"] {
     top: 5px;
     left: 0;
 }
+
 .info .title.active::before {
     transform: rotate(180deg);
+}
+
+.info .title-wrapp {
+    /*padding-left: 45px;*/
+    /*padding-bottom: 30px;*/
+}
+.info .title-wrapp p {
+    padding: 15px 45px;
 }
 footer {
     font-size: 13px;
@@ -529,34 +641,42 @@ footer {
     color: #ffffff;
     background-color: #64ba4a;
 }
+
 .footMenu {
     width: 50%;
     float: left;
 }
+
 .footMenu .col {
     width: 50%;
     float: left;
 }
+
 .footCont {
     width: 25%;
     float: left;
 }
+
 .copyright {
     width: 25%;
     float: left;
 }
+
 footer a {
     text-decoration: none;
     color: #ffffff;
 }
+
 footer a.soc {
     font-size: 21px;
 }
+
 .up {
     position: fixed;
     left: 10px;
     bottom: 10px;
 }
+
 /*новости подробно*/
 .breadCrumbs li a, .breadCrumbs li {
     font-size: 12px;
@@ -564,70 +684,83 @@ footer a.soc {
     color: #999999;
     text-decoration: none;
 }
+
 .firstCap {
     font-size: 25px;
     line-height: 22px;
     color: #333333;
     font-weight: 600;
 }
+
 .secCap {
     font-size: 18px;
     line-height: 22px;
     color: #333333;
     font-weight: 600;
 }
+
 .newsDate {
     font-size: 12px;
     line-height: 22px;
     color: #aaaaaa;
 }
+
 .newTxt {
     font-size: 13px;
     line-height: 19px;
     color: #333333;
 }
+
 .moreNews {
     font-size: 13px;
     line-height: 22px;
     color: #0069b4;
 }
+
 /*корпоративным клиентам*/
 .breadcrumbs li {
     font-size: 12px;
     line-height: 22px;
     color: #999999;
 }
+
 .breadcrumbs a {
     text-decoration: none;
     color: #999999;
 }
+
 .wrapper .left p {
     font-size: 13px;
     line-height: 22px;
     color: #333333;
 }
+
 .wrapper form label {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
     font-style: italic;
 }
+
 .formLog span:nth-child(1) {
     font-size: 13px;
     line-height: normal;
     color: #333333;
 }
+
 .formLog span:nth-child(2) {
     font-size: 11px;
     line-height: normal;
     color: #999999;
 }
+
 .radio-wrapper ul label {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
     font-style: normal;
 }
+
 .wrapper .formFile label {
     font-size: 13px;
     line-height: 22px;
@@ -635,53 +768,118 @@ footer a.soc {
     font-style: normal;
     text-decoration: underline;
 }
+
 .formFile span {
     font-size: 11px;
     line-height: normal;
     color: #999999;
 }
+
 .formQua option {
     font-size: 13px;
     line-height: 22px;
     color: #333333;
 }
+
 form button {
     font-size: 14px;
     line-height: 22px;
     color: #ffffff;
 }
+
 .right span {
     font-size: 25px;
     line-height: 22px;
     color: #333333;
 }
+
 .right p {
     font-size: 13px;
     line-height: 22px;
     color: #333333;
 }
+
 .right button {
     font-size: 14px;
     line-height: 22px;
     color: #ffffff;
 }
+
 /*оформление заказа*/
 h1 {
     font-size: 25px;
     line-height: 22px;
     color: #333333;
 }
+
 .form-order label {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
     font-style: italic;
 }
+
 .form-order option {
     font-size: 13px;
     line-height: 22px;
     color: #333333;
 }
+
+.selectB1 {
+    width: 290px;
+}
+
+.selectB1 .selectric {
+    width: 100%;
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+}
+
+.selectB1 .selectric label {
+    font-size: 13px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.selectric .label {
+    line-height: 28px;
+}
+
+.selectB1 .selectric .button {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid #00a48c;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    margin-top: -2px;
+    background-color: transparent;
+}
+
+.selectB1 .selectric .button::after {
+    display: none;
+}
+
+.selectB1 .selectric-items {
+    border: 1px solid #d6d6d6;
+}
+
+.selectB1 .selectric-items li {
+    padding: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #fff;
+}
+
+.selectB1 .selectric-items li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 h2 {
     font-size: 15px;
     line-height: 22px;
@@ -694,28 +892,34 @@ h2 {
     line-height: 19px;
     color: #333333;
 }
+
 .order-way p {
     font-size: 12px;
     line-height: 18px;
     color: #666666;
 }
+
 .order-way span {
     font-size: 12px;
     line-height: 18px;
     color: #f26522;
 }
+
 .order-address label {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
     font-style: italic;
 }
+
 .order-address label span {
     color: #ed1c24;
 }
+
 .order-list li {
     padding-left: 40px;
 }
+
 .order-list label {
     position: relative;
     padding-left: 40px;
@@ -724,9 +928,11 @@ h2 {
     line-height: 19px;
     color: #333333;
 }
+
 .radio-btn {
     display: none;
 }
+
 .radio-btn:not(checked) + label::before {
     content: '';
     display: block;
@@ -753,48 +959,61 @@ h2 {
     opacity: 0;
     transition: all 0.3s;
 }
+
 .radio-btn:checked + label::before {
     border-color: #51bf87;
 }
+
 .radio-btn:checked + label::after {
     opacity: 1;
 }
+
 .radio-btn + label {
     cursor: pointer;
 }
+
 @media (max-width: 1199px) {
     .container {
         width: 980px;
     }
+
     .banner .sale {
         height: 350px;
         width: 295px;
     }
+
     .banner .slider {
         height: 350px;
         width: 620px;
     }
+
     .advanteges {
         width: calc(100% - 300px);
     }
+
     .subscribe {
         width: 300px;
     }
+
     .card img {
         height: 215px;
     }
+
     .widjets {
         display: none;
     }
 }
+
 @media (max-width: 991px) {
     .container {
         width: 780px;
     }
+
     .
 
 }
-@media (max-width: 767px){
+
+@media (max-width: 767px) {
     .container {
         width: 100%;
     }
