@@ -519,7 +519,7 @@ header .phone [class*="icon"] {
 .widjets .wrap {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .widjets .item:nth-child(1),
@@ -646,7 +646,6 @@ footer {
     width: 50%;
     float: left;
 }
-
 .footMenu .col {
     width: 50%;
     float: left;
@@ -660,8 +659,8 @@ footer {
 .copyright {
     width: 25%;
     float: left;
+    text-align: right;
 }
-
 footer a {
     text-decoration: none;
     color: #ffffff;
